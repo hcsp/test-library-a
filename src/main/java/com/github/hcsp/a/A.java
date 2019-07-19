@@ -1,9 +1,9 @@
 package com.github.hcsp.a;
 
-import com.github.hcsp.b.B;
+import org.springframework.http.converter.json.MappingJacksonValue;
 
 public class A {
     public void a() {
-        new B().b();
+        new MappingJacksonValue(null).getJsonpFunction();
     }
 }

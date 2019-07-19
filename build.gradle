@@ -10,7 +10,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile 'com.github.hcsp:test-library-b:0.1'
+    compile 'org.springframework:spring-web:4.3.6.RELEASE'
 }
 
 task sync(type: Sync) {
@@ -46,7 +46,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.github.hcsp'
             artifactId = 'test-library-a'
-            version = '0.1'
+            version = '0.3'
 
             from components.java
             artifact sourcesJar
